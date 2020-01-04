@@ -43,7 +43,7 @@ export default {
       this.status = ``;
     },
     clearAll() {
-      if(this.todoList)
+      if(this.todoList.length === 0)
         window.alert("您还未添加任何数据");
       else
         if(window.confirm("确定清空所有吗？"))
